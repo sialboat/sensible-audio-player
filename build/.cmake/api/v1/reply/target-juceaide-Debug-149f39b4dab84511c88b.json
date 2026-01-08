@@ -1,0 +1,49 @@
+{
+	"abstract" : true,
+	"artifacts" : 
+	[
+		{
+			"path" : "modules/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable"
+		],
+		"files" : 
+		[
+			"modules/JUCE/extras/Build/juceaide/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 165,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "juceaide::@d3e408bdb105f2448a7d",
+	"imported" : true,
+	"name" : "juceaide",
+	"nameOnDisk" : "juceaide",
+	"paths" : 
+	{
+		"build" : "modules/JUCE/extras/Build/juceaide",
+		"source" : "modules/JUCE/extras/Build/juceaide"
+	},
+	"sources" : [],
+	"type" : "EXECUTABLE"
+}

@@ -1,0 +1,65 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"modules/JUCE/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 160,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/JUCE-8.0.12",
+			"paths" : 
+			[
+				"build/modules/JUCE/JUCEConfigVersion.cmake",
+				"build/modules/JUCE/JUCEConfig.cmake",
+				"modules/JUCE/extras/Build/CMake/JUCECheckAtomic.cmake",
+				"modules/JUCE/extras/Build/CMake/JUCEHelperTargets.cmake",
+				"modules/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake",
+				"modules/JUCE/extras/Build/CMake/JUCEUtils.cmake",
+				"modules/JUCE/extras/Build/CMake/JuceLV2Defines.h.in",
+				"modules/JUCE/extras/Build/CMake/LaunchScreen.storyboard",
+				"modules/JUCE/extras/Build/CMake/PIPAudioProcessor.cpp.in",
+				"modules/JUCE/extras/Build/CMake/PIPAudioProcessorWithARA.cpp.in",
+				"modules/JUCE/extras/Build/CMake/PIPComponent.cpp.in",
+				"modules/JUCE/extras/Build/CMake/PIPConsole.cpp.in",
+				"modules/JUCE/extras/Build/CMake/RecentFilesMenuTemplate.nib",
+				"modules/JUCE/extras/Build/CMake/UnityPluginGUIScript.cs.in",
+				"modules/JUCE/extras/Build/CMake/checkBundleSigning.cmake",
+				"modules/JUCE/extras/Build/CMake/copyDir.cmake",
+				"modules/JUCE/extras/Build/CMake/juce_runtime_arch_detection.cpp",
+				"modules/JUCE/extras/Build/CMake/juce_LinuxSubprocessHelper.cpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "modules/JUCE",
+		"source" : "modules/JUCE"
+	}
+}

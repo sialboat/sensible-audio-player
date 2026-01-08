@@ -1,0 +1,758 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "0Hf9GpUei4DVSRfD_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-0Hf9GpUei4DVSRfD_dict-Debug-8cecfe1961ed5992247a.json",
+					"name" : "0Hf9GpUei4DVSRfD_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "3tWTJo0KqF4XKnHc_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-3tWTJo0KqF4XKnHc_dict-Debug-2b3dad4544dc8e68a1ad.json",
+					"name" : "3tWTJo0KqF4XKnHc_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "BMhrF4x7auoPBds7_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-BMhrF4x7auoPBds7_dict-Debug-458d5ffc82f039c53916.json",
+					"name" : "BMhrF4x7auoPBds7_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "IaRnKaLBPZLCSQqc_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-IaRnKaLBPZLCSQqc_dict-Debug-54b27a91a27a5aa01602.json",
+					"name" : "IaRnKaLBPZLCSQqc_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "K2QnWGOzX0V33Qml_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-K2QnWGOzX0V33Qml_dict-Debug-089682b733f40175684b.json",
+					"name" : "K2QnWGOzX0V33Qml_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "KSLCWtoRfFJG5UiC_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-KSLCWtoRfFJG5UiC_dict-Debug-60b15d059632c43c619a.json",
+					"name" : "KSLCWtoRfFJG5UiC_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "RcThEfWzfy9PCNca_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-RcThEfWzfy9PCNca_dict-Debug-79c0a5ea30f6c01aa91e.json",
+					"name" : "RcThEfWzfy9PCNca_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SBCAKqdtC09r11pW_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-SBCAKqdtC09r11pW_dict-Debug-b25c10264ac904119d0d.json",
+					"name" : "SBCAKqdtC09r11pW_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "XsdOvaQua2IUbQl8_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-XsdOvaQua2IUbQl8_dict-Debug-102b8fea9b94ea036fc1.json",
+					"name" : "XsdOvaQua2IUbQl8_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "YJw7HCVnxdmq4NUU_dict::@8fd22fe1af0e1bc6fdcd",
+					"jsonFile" : "target-YJw7HCVnxdmq4NUU_dict-Debug-168278a1691dc55ef14b.json",
+					"name" : "YJw7HCVnxdmq4NUU_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ZHnqQkbrhLHkXwNw_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-ZHnqQkbrhLHkXwNw_dict-Debug-a95e2eb4b56a636a7d2e.json",
+					"name" : "ZHnqQkbrhLHkXwNw_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ZREKnAoR4pUeLzct_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-ZREKnAoR4pUeLzct_dict-Debug-30939d6f1e5a0b2e1137.json",
+					"name" : "ZREKnAoR4pUeLzct_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "aMXu3S3KLjGXESWg_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-aMXu3S3KLjGXESWg_dict-Debug-cf5623380dd5e0646d1b.json",
+					"name" : "aMXu3S3KLjGXESWg_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "bHeoZPX5ivZ9UrcU_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-bHeoZPX5ivZ9UrcU_dict-Debug-91c3ce1bec343815a9c9.json",
+					"name" : "bHeoZPX5ivZ9UrcU_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "dQTmTmHbPDAQIDz7_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-dQTmTmHbPDAQIDz7_dict-Debug-2ce906d01b0ef7ac3df6.json",
+					"name" : "dQTmTmHbPDAQIDz7_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gL7hqtEdrxRp1pQL_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-gL7hqtEdrxRp1pQL_dict-Debug-892c2808beae05200f7e.json",
+					"name" : "gL7hqtEdrxRp1pQL_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "hoMgz6etvvpE0eOu_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-hoMgz6etvvpE0eOu_dict-Debug-5fdf7f5b02160d62f9e7.json",
+					"name" : "hoMgz6etvvpE0eOu_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "jkSwe3raBP5aw2xH_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-jkSwe3raBP5aw2xH_dict-Debug-01a66e52fc69a1049cd2.json",
+					"name" : "jkSwe3raBP5aw2xH_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_analytics::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_analytics-Debug-c9900deb7ea1764268f0.json",
+					"name" : "juce_analytics",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_animation::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_animation-Debug-084fb27e9c9b46dcb9c5.json",
+					"name" : "juce_animation",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_ara_headers::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_ara_headers-Debug-405a5ec85ddb8879f883.json",
+					"name" : "juce_ara_headers",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "juce_atomic_wrapper::@9d2d1c7be0804f141d7f",
+					"jsonFile" : "target-juce_atomic_wrapper-Debug-45a792d1f2dc32bdf129.json",
+					"name" : "juce_atomic_wrapper",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_basics::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_basics-Debug-3854b1bba0fdf7d07d11.json",
+					"name" : "juce_audio_basics",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_devices::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_devices-Debug-9c5de2c9f62b425213e6.json",
+					"name" : "juce_audio_devices",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_formats::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_formats-Debug-ee219e910481bb17a17a.json",
+					"name" : "juce_audio_formats",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_plugin_client::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_plugin_client-Debug-462a7159e4cd60672268.json",
+					"name" : "juce_audio_plugin_client",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_plugin_client_AAX::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_plugin_client_AAX-Debug-12f6c765212a44a9265b.json",
+					"name" : "juce_audio_plugin_client_AAX",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_plugin_client_AU::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_plugin_client_AU-Debug-158d0b1e2a5a1e0ae071.json",
+					"name" : "juce_audio_plugin_client_AU",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_plugin_client_LV2::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_plugin_client_LV2-Debug-90e6217082d22ab67248.json",
+					"name" : "juce_audio_plugin_client_LV2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_plugin_client_Standalone::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_plugin_client_Standalone-Debug-552a1b99fc6744ca0d00.json",
+					"name" : "juce_audio_plugin_client_Standalone",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_plugin_client_Unity::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_plugin_client_Unity-Debug-b64fc5d8193d84f44ac0.json",
+					"name" : "juce_audio_plugin_client_Unity",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_plugin_client_VST::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_plugin_client_VST-Debug-e887e5f0cc66a9739d04.json",
+					"name" : "juce_audio_plugin_client_VST",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_plugin_client_VST3::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_plugin_client_VST3-Debug-5775503e8383af27e527.json",
+					"name" : "juce_audio_plugin_client_VST3",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_processors::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_processors-Debug-dd6e31fbcc2c4e4b93d3.json",
+					"name" : "juce_audio_processors",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_processors_headless::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_processors_headless-Debug-abb61b8943d79beda2f7.json",
+					"name" : "juce_audio_processors_headless",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_audio_utils::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_audio_utils-Debug-154891359ec6e8f24832.json",
+					"name" : "juce_audio_utils",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_box2d::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_box2d-Debug-4952269af2cfed1bf747.json",
+					"name" : "juce_box2d",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "juce_build_tools::@8fd22fe1af0e1bc6fdcd",
+					"jsonFile" : "target-juce_build_tools-Debug-f8b3e7f5c82edd8c8e28.json",
+					"name" : "juce_build_tools",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_core::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_core-Debug-34d561d6d76d2ba7b077.json",
+					"name" : "juce_core",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_cryptography::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_cryptography-Debug-a0c63be66d99b8cf5a43.json",
+					"name" : "juce_cryptography",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_data_structures::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_data_structures-Debug-12423195581b46b3f31f.json",
+					"name" : "juce_data_structures",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_dsp::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_dsp-Debug-64493a8af9cce1b66f01.json",
+					"name" : "juce_dsp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_events::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_events-Debug-5169f3150e976ebc8f78.json",
+					"name" : "juce_events",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_graphics::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_graphics-Debug-f8a669a57b81e7c90693.json",
+					"name" : "juce_graphics",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_gui_basics::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_gui_basics-Debug-97309b3388705b7473c0.json",
+					"name" : "juce_gui_basics",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_gui_extra::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_gui_extra-Debug-9f9b19e1ac76778ed974.json",
+					"name" : "juce_gui_extra",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_javascript::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_javascript-Debug-20ec4ec8561c14d6ea01.json",
+					"name" : "juce_javascript",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_lilv_headers::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_lilv_headers-Debug-b5dc49766a900a3d675f.json",
+					"name" : "juce_lilv_headers",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_midi_ci::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_midi_ci-Debug-1f951ee55a55aa967040.json",
+					"name" : "juce_midi_ci",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_opengl::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_opengl-Debug-95cb044841a10dddfefb.json",
+					"name" : "juce_opengl",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_osc::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_osc-Debug-69f2d82509d918cd13f3.json",
+					"name" : "juce_osc",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_product_unlocking::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_product_unlocking-Debug-9729943fb17a7bd62fe0.json",
+					"name" : "juce_product_unlocking",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "juce_recommended_config_flags::@9d2d1c7be0804f141d7f",
+					"jsonFile" : "target-juce_recommended_config_flags-Debug-e07c117e9f0d2e79d5a5.json",
+					"name" : "juce_recommended_config_flags",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "juce_recommended_lto_flags::@9d2d1c7be0804f141d7f",
+					"jsonFile" : "target-juce_recommended_lto_flags-Debug-fa7b572bfe96dfa7e827.json",
+					"name" : "juce_recommended_lto_flags",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "juce_recommended_warning_flags::@9d2d1c7be0804f141d7f",
+					"jsonFile" : "target-juce_recommended_warning_flags-Debug-e499562fa7e60de1c246.json",
+					"name" : "juce_recommended_warning_flags",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "juce_tools::juceaide::@d3e408bdb105f2448a7d",
+					"jsonFile" : "target-juce_tools__juceaide-Debug-d547340dcf3f5606c1ff.json",
+					"name" : "juce_tools::juceaide",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_video::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_video-Debug-1af8298ffa2dca68ada8.json",
+					"name" : "juce_video",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "juce_vst3_headers::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-juce_vst3_headers-Debug-39069615ad6e72d5aaf4.json",
+					"name" : "juce_vst3_headers",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "juceaide::@d3e408bdb105f2448a7d",
+					"jsonFile" : "target-juceaide-Debug-149f39b4dab84511c88b.json",
+					"name" : "juceaide",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mIrjL8L950g64vYm_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-mIrjL8L950g64vYm_dict-Debug-f5223dcee56bbb14b6c2.json",
+					"name" : "mIrjL8L950g64vYm_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mL71vC0TKagkQ4qE_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-mL71vC0TKagkQ4qE_dict-Debug-79436def6e969e872dfe.json",
+					"name" : "mL71vC0TKagkQ4qE_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "n8Y8UtqEgtGiT5DS_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-n8Y8UtqEgtGiT5DS_dict-Debug-f953bd7de905e757abff.json",
+					"name" : "n8Y8UtqEgtGiT5DS_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "pSloQ8zgr4eXZnOK_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-pSloQ8zgr4eXZnOK_dict-Debug-cbfccdceb2c5ac66392d.json",
+					"name" : "pSloQ8zgr4eXZnOK_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "rBOrPi2fFPvtkGI1_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-rBOrPi2fFPvtkGI1_dict-Debug-a4421e38793fd98fe4a2.json",
+					"name" : "rBOrPi2fFPvtkGI1_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "rpbUn17U6krgJl3z_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-rpbUn17U6krgJl3z_dict-Debug-93787f818ef5219393d2.json",
+					"name" : "rpbUn17U6krgJl3z_dict",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yOnCvCbnREbjSyEb_dict::@e54ca96b2df754b11c70",
+					"jsonFile" : "target-yOnCvCbnREbjSyEb_dict-Debug-e79559e9aaa5095a91aa.json",
+					"name" : "yOnCvCbnREbjSyEb_dict",
+					"projectIndex" : 1
+				}
+			],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-9ad1a58d4644cf6543fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						21,
+						52,
+						53,
+						54
+					],
+					"build" : "modules/JUCE",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-modules.JUCE-Debug-16ddc68e24be8e724383.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "modules/JUCE"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						56,
+						57,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65
+					],
+					"build" : "modules/JUCE/modules",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-modules.JUCE.modules-Debug-9f4f6735a335afe7f187.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "modules/JUCE/modules"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						9,
+						37
+					],
+					"build" : "modules/JUCE/extras/Build",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-modules.JUCE.extras.Build-Debug-336283f209a868be806c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "modules/JUCE/extras/Build"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						55,
+						58
+					],
+					"build" : "modules/JUCE/extras/Build/juceaide",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-modules.JUCE.extras.Build.juceaide-Debug-b13d398d1fbdc5405531.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 1,
+					"source" : "modules/JUCE/extras/Build/juceaide"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SensibleAudioPlayer",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "JUCE",
+					"parentIndex" : 0
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Assets::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Assets-Debug-c15f86931633c80f3162.json",
+					"name" : "Assets",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SensibleAudioPlayer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SensibleAudioPlayer-Debug-77a5fdb77914951cf034.json",
+					"name" : "SensibleAudioPlayer",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/sialboat/Documents/JUCE/sensible audio player/sensible-audio-player/build",
+		"source" : "/Users/sialboat/Documents/JUCE/sensible audio player/sensible-audio-player"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}
