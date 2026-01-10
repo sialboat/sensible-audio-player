@@ -1,4 +1,10 @@
 {
     "C_Cpp.default.compilerPath": "/usr/bin/clang++",
-    "cmake.sourceDirectory": "/Users/sialboat/Documents/JUCE/sensible audio player/sensible-audio-player"
+    "C_Cpp.debugger.useBacktrace": false,
+    "C_Cpp.default.debugger": "none",
+    "cmake.sourceDirectory": "/Users/sialboat/Documents/JUCE/sensible audio player/sensible-audio-player",
+    "lldb.displayFormat": "auto",
+    "lldb.showDisassembly": "auto",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands"
 }

@@ -53,7 +53,7 @@ juce_add_gui_app(SensibleAudioPlayer
 # include all your JUCE module headers; if you're happy to include module headers directly, you
 # probably don't need to call this.
 
-# juce_generate_juce_header(GuiAppExample)
+juce_generate_juce_header(SensibleAudioPlayer)
 
 # `target_sources` adds source files to a target. We pass the target that needs the sources as the
 # first argument, then a visibility parameter for the sources which should normally be PRIVATE.
@@ -67,7 +67,19 @@ file(GLOB_RECURSE SourceFiles CONFIGURE_DEPENDS
 
 target_sources(SensibleAudioPlayer
     PRIVATE
-        ${SourceFiles})
+        source/Main.cpp
+        source/MainComponent.cpp
+        source/MainComponent.h
+        source/Audio/AudioEngine.cpp
+        source/Audio/AudioEngine.h
+        source/UI/TransportComponent.cpp
+        source/UI/TransportComponent.h
+        source/Types.h
+)
+target_include_directories(SensibleAudioPlayer
+    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/source
+)
+        # ${SourceFiles})
 
 file(GLOB_RECURSE Assets "${CMAKE_CURRENT_SOURCE_DIR}/assets/*.*")
 

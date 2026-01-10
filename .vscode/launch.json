@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "JUCE App (CodeLLDB)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "/Users/sialboat/Documents/JUCE/sensible audio player/sensible-audio-player/build/Debug/sensible audio player.app/Contents/MacOS/sensible audio player",
+            "cwd": "${workspaceFolder}",
+            "sourceLanguages": ["cpp"],
+            "initCommands": [
+                "settings set target.run-args ''"
+            ]
+        }
+    ]
+}
