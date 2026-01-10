@@ -82,7 +82,7 @@ void TransportComponent::changeListenerCallback(juce::ChangeBroadcaster* source)
         updateButtons();
 }
 
-void TransportComponent::timerCallback()
+void TransportComponent::hiResTimerCallback()
 {
     juce::String totalTime = convertTime(audioEngine.getTotalSeconds());
     juce::String currentTime = convertTime(audioEngine.getCurrentSeconds());

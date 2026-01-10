@@ -3,6 +3,13 @@
 #ifndef TYPES_H
 #define TYPES_H
 
+/*
+    Types.h
+
+    Utility header file for enums, structs, and namespaces 
+    that multiple parts of the software may deem useful.
+*/
+
 #define MAX_INPUT_CHANNELS 16
 #define MAX_OUTPUT_CHANNELS 16
 #define DEFAULT_TIMER_INTERVAL_MS 1000

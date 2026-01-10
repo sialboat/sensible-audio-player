@@ -16,13 +16,13 @@
 
 class TransportComponent : public juce::Component,
                            public juce::ChangeListener,
-                           public juce::Timer
+                           public juce::HighResolutionTimer
 {
 public:
     TransportComponent(AudioEngine& e); 
     ~TransportComponent() override;
 
-    void timerCallback() override;
+    void hiResTimerCallback() override;
 
     void resized() override;
     void changeListenerCallback(juce::ChangeBroadcaster* source) override;
