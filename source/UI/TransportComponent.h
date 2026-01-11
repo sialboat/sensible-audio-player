@@ -23,26 +23,36 @@ public:
     ~TransportComponent() override;
 
     void hiResTimerCallback() override;
+    bool keyPressed(const juce::KeyPress& k) override;
 
     void resized() override;
     void changeListenerCallback(juce::ChangeBroadcaster* source) override;
-    void openButtonClicked();
-    void stopButtonClicked();
-    void playButtonClicked();
     void changeState(TransportState newState);
     void updateButtons();
 
 private:
+    void openButtonClicked();
+    void stopButtonClicked();
+    void playButtonClicked();
+    void pauseButtonClicked();
 
     juce::String convertTime(double r);
 
     juce::TextButton openButton;
     juce::TextButton playButton;
+    juce::TextButton pauseButton;
     juce::TextButton stopButton;
 
     juce::Label duration;
+    juce::Label nowPlaying;
+
+    juce::Slider songTransport;
+
+    juce::Label songGainLabel;
+    juce::Slider songGain;
 
     std::unique_ptr<juce::FileChooser> chooser;
+    juce::String fileName;
 
     AudioEngine& audioEngine;
 

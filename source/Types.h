@@ -13,10 +13,11 @@
 #define MAX_INPUT_CHANNELS 16
 #define MAX_OUTPUT_CHANNELS 16
 #define DEFAULT_TIMER_INTERVAL_MS 1000
+#define DEFAULT_SAMPLE_RATE 48000
 
 
 enum TransportState {
-    Stopped, Starting, Playing, Stopping
+    Stopped, Starting, Playing, Stopping, Paused
 };
 
 struct TIME_VALUES {

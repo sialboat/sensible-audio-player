@@ -8,7 +8,8 @@
 
 class AudioEngine : public juce::AudioAppComponent,
                     public juce::ChangeListener,
-                    public juce::ChangeBroadcaster
+                    public juce::ChangeBroadcaster,
+                    private juce::Value::Listener
 {
 public:
     AudioEngine();
@@ -33,16 +34,29 @@ public:
             currentSeconds = temp;
         return currentSeconds;
     }
+    double getPlayheadSeconds() {
+        return playheadSamples.load() / sampleRate;
+    }
+    bool isPaused() { return paused; }
     double getTotalSeconds() { return totalSeconds; }
+    float getGainValue() { return ((float) songGain.getValue()); }
+    juce::Value& getSongGain() { return songGain; }
 
 private:
+    void valueChanged(juce::Value& value) override;
+
     juce::AudioFormatManager formatManager;
     std::unique_ptr<juce::AudioFormatReaderSource> readerSource;
     juce::AudioTransportSource transportSource;
     TransportState state;
 
+    bool paused;
+
     double currentSeconds;
     double totalSeconds;
+    std::atomic<uint64_t> playheadSamples;
+    double sampleRate;
+    juce::Value songGain;
 };
 
 #endif
