@@ -4,7 +4,9 @@
 
 #include <JuceHeader.h>
 #include "Audio/AudioEngine.h"
-#include "Types.h"
+#include "UI/TransportControls.h"
+#include "UI/TransportDisplay.h"
+#include "Utils/Types.h"
 
 // label object to interface that displays current time position of 
     // audioTransportSource object.
@@ -15,46 +17,29 @@
     // for minutes, seconds, milliseconds.
 
 class TransportComponent : public juce::Component,
-                           public juce::ChangeListener,
-                           public juce::HighResolutionTimer
+                           public juce::ChangeListener
 {
 public:
-    TransportComponent(AudioEngine& e); 
+    TransportComponent(AudioEngine& e, TransportStateManager& m); 
     ~TransportComponent() override;
-
-    void hiResTimerCallback() override;
-    bool keyPressed(const juce::KeyPress& k) override;
-
+    
     void resized() override;
-    void changeListenerCallback(juce::ChangeBroadcaster* source) override;
-    void changeState(TransportState newState);
-    void updateButtons();
+    void changeListenerCallback(juce::ChangeBroadcaster* b) override {}
+    void updateTime(double d, double t) { transportDisplay.updateTime(d, t); }
+    // juce::String getCurrentFileDuration() { return currentFileDuration; }
+
+    void openButtonClicked() { buttonControls.openButtonClicked(); }
+    void stopButtonClicked() { buttonControls.stopButtonClicked(); }
+    void playButtonClicked() { buttonControls.playButtonClicked(); }
+    void pauseButtonClicked() { buttonControls.pauseButtonClicked(); }
+    void loopButtonClicked() { buttonControls.loopButtonClicked(); }
 
 private:
-    void openButtonClicked();
-    void stopButtonClicked();
-    void playButtonClicked();
-    void pauseButtonClicked();
-
-    juce::String convertTime(double r);
-
-    juce::TextButton openButton;
-    juce::TextButton playButton;
-    juce::TextButton pauseButton;
-    juce::TextButton stopButton;
-
-    juce::Label duration;
-    juce::Label nowPlaying;
-
-    juce::Slider songTransport;
-
-    juce::Label songGainLabel;
-    juce::Slider songGain;
-
-    std::unique_ptr<juce::FileChooser> chooser;
-    juce::String fileName;
 
     AudioEngine& audioEngine;
+    TransportControls buttonControls;
+    TransportDisplay transportDisplay;
+    TransportStateManager& transportState;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(TransportComponent)
 };

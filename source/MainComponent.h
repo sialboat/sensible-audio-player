@@ -9,6 +9,7 @@
 
 #include "Audio/AudioEngine.h"
 #include "UI/TransportComponent.h"
+#include "Utils/Types.h"
 
 //==============================================================================
 /*
@@ -25,9 +26,13 @@ public:
     void paint (juce::Graphics&) override;
     void resized() override;
 
+    bool keyPressed(const juce::KeyPress& k) override;
+
 private:
     AudioEngine audioEngine;
     TransportComponent transportComponent;
+
+    TransportStateManager transportState;
     
     // label object to interface that displays current time position of 
     // audioTransportSource object.

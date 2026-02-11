@@ -1,9 +1,25 @@
 #include "MainComponent.h"
 
+/* 
+    MainComponent.cpp
+
+    anything that needs the interaction of multiple components 
+    (audioEngine and transportDisplay, etc.) should be implemented 
+    here.
+*/ 
+
 //==============================================================================
-MainComponent::MainComponent() : transportComponent(audioEngine)
+MainComponent::MainComponent() : audioEngine(transportState), 
+    transportComponent(audioEngine, transportState)
 {
-    addAndMakeVisible(transportComponent);
+    // addAndMakeVisible(transportComponent);
+
+    // audioEngine.addChangeListener(this);
+    // audioEngine.getTransportSource.addChangeListner(this);
+
+    // the callback lambdas go here
+
+
     // otherDeviceManager.initialise(2, 2, nullptr, true);
     // waveViewer.setRepaintRate(30); // rate at which it will redraw itself
     // waveViewer.setBufferSize(256); // how many samples it will draw
@@ -33,14 +49,15 @@ MainComponent::MainComponent() : transportComponent(audioEngine)
     // find out how to enable other formats silas
     // formatManager.registerBasicFormats(); // create readers for wav and aiff
                                                    // state changes
-
     // setAudioChannels(2, 2);                     // forgot this lmao
 
-    setSize (600, 400);
+    setSize (APP_WIDTH, APP_HEIGHT);
 }
 
 MainComponent::~MainComponent()
 {
+    // audioEngine.removeChangeListener(this);
+    // audioEngine.getTransportSource().removeChangeListener(this);
 }
 //==============================================================================
 void MainComponent::paint (juce::Graphics& g)
@@ -63,6 +80,22 @@ void MainComponent::resized()
     // playButton.setBounds(10, 40, getWidth() - 20, 20);
     // stopButton.setBounds(10, 70, getWidth() - 20, 20);
     // audioSettings->setBounds(10, 100, getWidth() - 20, 20);
-
     // waveViewer.setBounds(10, audioSettings->getBottom() + 30, getWidth() - 20, 20);
+}
+
+bool MainComponent::keyPressed(const juce::KeyPress& k)
+{
+    if(k == juce::KeyPress::spaceKey)
+    {
+        if(audioEngine.isPaused())
+            transportComponent.playButtonClicked();
+        else
+            transportComponent.pauseButtonClicked();
+        return true;
+    }
+    if(k == juce::KeyPress::escapeKey)
+    {
+        transportComponent.stopButtonClicked();
+    }
+    return false; // we shouldn't get here.
 }

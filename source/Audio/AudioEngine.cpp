@@ -1,7 +1,8 @@
 #include "AudioEngine.h"
 
-AudioEngine::AudioEngine() : state(Stopped), totalSeconds(0), currentSeconds(0),
-    paused(false), playheadSamples{0}, sampleRate(DEFAULT_SAMPLE_RATE), songGain{0.0f}
+AudioEngine::AudioEngine(TransportStateManager& m) : transportState(m),
+    paused(false), currentSeconds(0), totalSeconds(0), 
+    sampleRate(DEFAULT_SAMPLE_RATE), songGain{0.0f}
 {
     formatManager.registerBasicFormats(); // create readers for wav and aiff
     transportSource.addChangeListener(this);
@@ -34,14 +35,14 @@ void AudioEngine::getNextAudioBlock(const juce::AudioSourceChannelInfo& bufferTo
     }
     // if(transportSource.isPlaying()) {
     transportSource.getNextAudioBlock(bufferToFill);
-    playheadSamples += bufferToFill.numSamples;
+    // playheadSamples += bufferToFill.numSamples;
     // }
     // waveViewer.pushBuffer(bufferToFill->buffer);
 }
 
-void AudioEngine::prepareToPlay(int samplesPerBlockExpected, double sampleRate)
+void AudioEngine::prepareToPlay(int samplesPerBlockExpected, double sr)
 {
-    transportSource.prepareToPlay(samplesPerBlockExpected, sampleRate);
+    transportSource.prepareToPlay(samplesPerBlockExpected, sr);
 }
 
 void AudioEngine::changeListenerCallback(juce::ChangeBroadcaster* source)
@@ -49,11 +50,13 @@ void AudioEngine::changeListenerCallback(juce::ChangeBroadcaster* source)
     if(source == &transportSource)
     {
         if(transportSource.isPlaying())
-            changeState(Playing);
-        else if (state == Paused)
-            changeState(Paused);
+            transportState.changeState(Playing);
+        else if (transportState.getState() == Paused)
+            transportState.changeState(Paused);
         else
-            changeState(Stopped);
+            transportState.changeState(Stopped);
+
+        // handleTransportStateChange();
     }
 }
 
@@ -63,7 +66,7 @@ bool AudioEngine::loadFile(juce::File f)
     if(reader != nullptr)
     {
         paused = false;
-        playheadSamples.store(0);
+        // playheadSamples.store(0);
         totalSeconds = transportSource.getLengthInSeconds();
 
         auto newSource = std::make_unique<juce::AudioFormatReaderSource>(reader, true);
@@ -74,11 +77,9 @@ bool AudioEngine::loadFile(juce::File f)
     return false;
 }
 
-void AudioEngine::changeState(TransportState newState)
+void AudioEngine::onTransportStateChange(TransportState s)
 {
-    if(state != newState) {
-        state = newState;
-        switch(state)
+        switch(s)
         {
             case Stopped:
                 transportSource.setPosition(0.0);
@@ -92,29 +93,29 @@ void AudioEngine::changeState(TransportState newState)
                 break;
             case Stopping:
                 transportSource.stop();
-                playheadSamples.store(0);
+                // playheadSamples.store(0);
                 break;
             case Paused:
                 paused = true;
                 transportSource.stop();
             case Playing:
                 break;
+            case Looping:
+                break;
             // default:
             //     break;
         }
-
-    }
-    
 }
-
-// void AudioEngine::timerCallback()
-// {
-//     currentSeconds = transportSource.getCurrentPosition();
-// }
 
 void AudioEngine::valueChanged(juce::Value& value)
 {
     transportSource.setGain(
         juce::Decibels::decibelsToGain((float) value.getValue())
     );
+}
+
+void AudioEngine::updateReaderSource(bool shouldLoop)
+{
+    if(readerSource.get() != nullptr)
+        readerSource->setLooping(shouldLoop);
 }

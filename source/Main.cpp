@@ -1,5 +1,18 @@
 #include "MainComponent.h"
 
+/*
+    TO DO:
+    - [X] Redesign the button callback system via a transportStateHandler object
+          so everybody equally owns the state.
+    - [ ] Centralize Audio File loading and playback using AudioFile class
+          so metadata and audio loading does not split between transport and 
+          audio engine
+    - [X] Centralize State Management so that there is more control over which 
+          objects get to use states in the software.
+*/
+
+
+
 //==============================================================================
 class GuiAppApplication final : public juce::JUCEApplication
 {

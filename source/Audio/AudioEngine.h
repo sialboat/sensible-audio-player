@@ -4,15 +4,17 @@
 #define AUDIO_ENGINE_H
 
 #include <JuceHeader.h>
-#include "Types.h"
+#include "Utils/TransportStateManager.h"
+#include "Utils/Types.h"
 
 class AudioEngine : public juce::AudioAppComponent,
                     public juce::ChangeListener,
                     public juce::ChangeBroadcaster,
+                    public TransportStateListener,
                     private juce::Value::Listener
 {
 public:
-    AudioEngine();
+    AudioEngine(TransportStateManager& m);
     ~AudioEngine() override;
 
     void changeListenerCallback(juce::ChangeBroadcaster* source) override;
@@ -20,42 +22,37 @@ public:
     void prepareToPlay(int samplesPerBlockExpected, double sampleRate) override;
     void releaseResources() override;
     bool loadFile(juce::File f);
-    void changeState(TransportState newState);
-    TransportState getState() { return state; }
+
+    void onTransportStateChange(TransportState s) override; 
 
     juce::AudioTransportSource& getTransportSource() noexcept 
     { 
         return transportSource;
     }
     
-    double getCurrentSeconds() { 
-        double temp = transportSource.getCurrentPosition();
-        if(temp != currentSeconds)
-            currentSeconds = temp;
-        return currentSeconds;
-    }
-    double getPlayheadSeconds() {
-        return playheadSamples.load() / sampleRate;
-    }
     bool isPaused() { return paused; }
-    double getTotalSeconds() { return totalSeconds; }
+    double getCurrentSeconds() { return transportSource.getCurrentPosition(); }
+    double getTotalSeconds() { return transportSource.getLengthInSeconds(); }
     float getGainValue() { return ((float) songGain.getValue()); }
     juce::Value& getSongGain() { return songGain; }
+
+    void updateReaderSource(bool shouldLoop);
 
 private:
     void valueChanged(juce::Value& value) override;
 
+    TransportStateManager& transportState;
+
     juce::AudioFormatManager formatManager;
     std::unique_ptr<juce::AudioFormatReaderSource> readerSource;
     juce::AudioTransportSource transportSource;
-    TransportState state;
+    // TransportState state;
 
     bool paused;
 
-    double currentSeconds;
+    [[maybe_unused]] double currentSeconds;
     double totalSeconds;
-    std::atomic<uint64_t> playheadSamples;
-    double sampleRate;
+    [[maybe_unused]] double sampleRate;
     juce::Value songGain;
 };
 

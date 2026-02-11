@@ -67,14 +67,15 @@ file(GLOB_RECURSE SourceFiles CONFIGURE_DEPENDS
 
 target_sources(SensibleAudioPlayer
     PRIVATE
-        source/Main.cpp
-        source/MainComponent.cpp
-        source/MainComponent.h
-        source/Audio/AudioEngine.cpp
-        source/Audio/AudioEngine.h
-        source/UI/TransportComponent.cpp
-        source/UI/TransportComponent.h
-        source/Types.h
+        ${SourceFiles}
+        # source/Main.cpp
+        # source/MainComponent.cpp
+        # source/MainComponent.h
+        # source/Audio/AudioEngine.cpp
+        # source/Audio/AudioEngine.h
+        # source/UI/TransportComponent.cpp
+        # source/UI/TransportComponent.h
+        # source/Types.h
 )
 target_include_directories(SensibleAudioPlayer
     PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/source
